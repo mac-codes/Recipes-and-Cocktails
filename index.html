@@ -31,27 +31,7 @@
         </div>
     </nav>
   </header>
-  <!-- can we git rid of these search bars? -->
-  <div class="search">
-    <form action="#">
-      <input type="text" placeholder="Search Recipes" name="search">
-      <button>
-        <i class="fa fa-search" style="font-size: 18px;">
-        </i>
-      </button>
-    </form>
-  </div>
-  </div>
-  <div class="search">
-    <form action="#">
-      <input type="text" placeholder="Search Cocktails" name="search">
-      <button>
-        <i class="fa fa-search" style="font-size: 18px;">
-        </i>
-      </button>
-    </form>
-  </div>
-  </div>
+
 
   <!-- I dont think we need a button here... probably just text input. -->
   <section id='drink-section'>
@@ -59,8 +39,9 @@
       <!-- <img class="card-img-top" src="www.thecocktaildb.com/api/json/v1/1/random.php  " alt=""> -->
       <h2 class="card-title">Cocktails</h2>
       <div class="card-body">
-        <h3 id="drink-name"></h3>
-        <p class="card-text"></p>
+        <p id="drink-name"></p>
+        <img id="drink-image" src=''/>
+        <p class="on-list-item"></p>
         <a href="#" class="btn btn-primary">Instructions/Ingredients</a>
       </div>
     </div>

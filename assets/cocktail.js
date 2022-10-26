@@ -31,12 +31,10 @@ function getRandomDrink() {
     let drinkName = document.getElementById('drink-name');
     drinkName.textContent = cocktail.drinks[0].strDrink;
     
-    drinkSection.appendChild(drinkName);
 
-    let img = document.createElement('img');
-    img.src = cocktail.drinks[0].strDrinkThumb;
+    let img = document.getElementById('drink-image');
+    img.setAttribute('src', cocktail.drinks[0].strDrinkThumb);
 
-    drinkSection.appendChild(img);
 
     for (let i = 1; i < 16; i++){
       console.log();
@@ -47,10 +45,9 @@ function getRandomDrink() {
         break;
       }
 
-      let ingredient = document.createElement('on-list-item');
-      ingredient.innerHTML = cocktail.drinks[0][`strMeasure${i}`] + ': ' + cocktail.drinks[0][`strIngredient${i}`];
+      let ingredient = document.getElementById('on-list-item');
+      ingredient.textContent = cocktail.drinks[0][`strMeasure${i}`] + ': ' + cocktail.drinks[0][`strIngredient${i}`];
 
-      drinkSection.appendChild(ingredient);
     }
     let card = document.createElement('on-card');
     card.innderHTML = cocktail.drinks[0].strInstructions;
