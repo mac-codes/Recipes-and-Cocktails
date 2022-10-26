@@ -32,3 +32,6 @@
   font-size: 38px;
   font-family: 'Courier New', Courier, monospace;
 }
+#drink-section img {
+  width: 30%;
+}
