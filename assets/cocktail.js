@@ -54,4 +54,12 @@ function getRandomDrink() {
 
     drinkSection.appendChild(card);
 
+    window.onload=function() {
+      var ingredients = document.getElementById("ingredients");
+      
+   }
+   window.addEventListener('load', (event) => {
+    console.log('recipe');
+  });
+  
   }
