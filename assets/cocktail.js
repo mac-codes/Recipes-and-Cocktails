@@ -22,9 +22,10 @@ function getRandomDrink() {
 }
 
 getRandomDrink();
-
 function displayRandomDrink(cocktail) {
   console.log(cocktail.drinks[0])
+  
+  var ingrContainer = document.querySelector('.ingr-container')
 
   let drinkSection = document.querySelector('#drink-section');
   // could probably get elements by class or id and they would be inside the card...
@@ -35,21 +36,22 @@ function displayRandomDrink(cocktail) {
   let img = document.getElementById('drink-image');
   img.setAttribute('src', cocktail.drinks[0].strDrinkThumb);
 
-    for (let i = 1; i < 16; i++){
-      console.log();
 
-    if (cocktail.drinks[0][`strMeasure${i}`] == null) {
-      
-    } if (cocktail.drinks[0][`strIngredient${i}`] === null) {
-      break;
-    }
+  for (let i = 1; i < 16; i++) {
     console.log();
-    
-    let ingredient = document.getElementById('on-list-item');
-    ingredient.textContent = cocktail.drinks[0][`strMeasure${i}`] + ': ' + cocktail.drinks[0][`strIngredient${i}`];
+    var measure = cocktail.drinks[0][`strMeasure${i}`];
+    var ingredient = cocktail.drinks[0][`strIngredient${i}`];
+
+    if (measure && ingredient) {
+          let ingredientEl = document.createElement('p');
+    ingredientEl.textContent = cocktail.drinks[0][`strMeasure${i}`] + ': ' + cocktail.drinks[0][`strIngredient${i}`];
+    ingrContainer.appendChild(ingredientEl)
+    } 
+
 
   }
   let card = document.getElementById('on-card');
   card.textContent = cocktail.drinks[0].strInstructions;
 
-  }
+
+}
