@@ -18,14 +18,17 @@
     <nav class="navbar bg-light" id="nav" style="background-color:beige">
       <div class="container-fluid">
         <span class="navbar-brand mb-0 h1">RECIPES AND COCKTAILS</span>
-
-        <button class="btn" id="main-btn" type="text" onClick="refreshPage()">HOME</button>
+          <a href="index.html">
+            <button class="btn" id="main-btn">HOME</button>
+          </a>
         <button class="btn" id="search-btn" type="button"> <input id="searchbar" onkeyup="search_cocktails()"
             type="text" name="search" placeholder="Search Cocktails.."></button>
-        <li>
-            <a href="recipe.html">Recipes</a>
-        </li>
-
+        <button class="btn" id="search-btn" type="button" onClick="myOnClickFn()">Search Recipes!</button>
+          <script>
+            function myOnClickFn(){
+              document.location.href="recipe.html";
+            }
+            </script>
         <div class="header-img">
           <img src="./img/header.jpeg">
           <h1 id="image-text">A place to find any recipe for any ocassion!</h1>
@@ -41,12 +44,14 @@
       <h2 class="card-title">Cocktails</h2>
       <div class="card-body">
         <p id="drink-name"></p>
-        <img id="drink-image" src=''/>
-        <p class="on-list-item"></p>
+        <img id="drink-image" src='' />
+        <p id="on-list-item"></p>
+        <p id="on-card"></p>
         <a href="#" class="btn btn-primary">Instructions/Ingredients</a>
       </div>
     </div>
   </section>
+ 
   <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
     crossorigin="anonymous"></script>
   <script href="https://api.spoonacular.com/recipes/complexSearch"></script>
