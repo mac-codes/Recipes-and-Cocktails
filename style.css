@@ -51,19 +51,21 @@ body{
     display: flex;
     align-items: stretch;
 } 
-.search-ctrl,
+.search-control,
 .search-btn{
     width: 100%;
 }
-.search-ctrl{
+.search-control{
     padding: 0 1rem;
     font-size: 1.1rem;
     font-family: inherit;
     outline: 0;
     border: 1px solid var(--timmy-tism);
     color: var(--timmy-tism);
-    border-top-left-radius: 4rem;
-    border-bottom-left-radius: 4rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
 }
 .search-control ::placeholder{
     color: var(--timmy-tism);
@@ -77,6 +79,8 @@ body{
     border: none;
     border-top-right-radius: 2rem;
     border-bottom-right-radius: 2rem;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
     transition: all 0.4s linear;
 }
 .search-btn:hover{

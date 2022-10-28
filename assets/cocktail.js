@@ -35,9 +35,8 @@ function displayRandomDrink(cocktail) {
   let img = document.getElementById('drink-image');
   img.setAttribute('src', cocktail.drinks[0].strDrinkThumb);
 
-
-  for (let i = 1; i < 16; i++) {
-    
+    for (let i = 1; i < 16; i++){
+      console.log();
 
     if (cocktail.drinks[0][`strMeasure${i}`] == null) {
       
@@ -53,5 +52,4 @@ function displayRandomDrink(cocktail) {
   let card = document.getElementById('on-card');
   card.textContent = cocktail.drinks[0].strInstructions;
 
-
-}
+  }
