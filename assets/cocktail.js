@@ -57,6 +57,7 @@ function displayRandomDrink(cocktail) {
   var text = words.join( "</span> <span>" );
   $( "#on-card" ).first().html( "<span>" + text + "</span>" );
   $( "span" ).on( "click", function() {
+
     $( this ).css( "background-color", "yellow" );
   });
 }
