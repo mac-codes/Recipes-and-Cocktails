@@ -22,7 +22,6 @@ function getRandomDrink() {
 }
 
 getRandomDrink();
-
 function displayRandomDrink(cocktail) {
   console.log(cocktail.drinks[0])
   
