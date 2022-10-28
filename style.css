@@ -64,6 +64,8 @@ body{
     color: var(--timmy-tism);
     border-top-left-radius: 4rem;
     border-bottom-left-radius: 4rem;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
 }
 .search-control ::placeholder{
     color: var(--timmy-tism);
