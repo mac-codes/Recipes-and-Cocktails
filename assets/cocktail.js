@@ -35,16 +35,16 @@ function displayRandomDrink(cocktail) {
   let img = document.getElementById('drink-image');
   img.setAttribute('src', cocktail.drinks[0].strDrinkThumb);
 
-
     for (let i = 1; i < 16; i++){
       console.log();
 
-    if (cocktail.drinks[0][`strMeasure${i}`] === null) {
-      break;
+    if (cocktail.drinks[0][`strMeasure${i}`] == null) {
+      
     } if (cocktail.drinks[0][`strIngredient${i}`] === null) {
       break;
     }
-
+    console.log();
+    
     let ingredient = document.getElementById('on-list-item');
     ingredient.textContent = cocktail.drinks[0][`strMeasure${i}`] + ': ' + cocktail.drinks[0][`strIngredient${i}`];
 
