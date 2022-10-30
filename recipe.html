@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
-  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
-<link rel="stylesheet" href="./assets/style.css">
+    integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  <link rel="stylesheet" href="./R-assets/style.css">
   <title>Find Recipes For Your Ingredients</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
-  <link rel = "stylesheet" href = "recipe.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <link rel="stylesheet" href="./R-assets/recipe.css">
 </head>
+
 <body>
 
   <nav class="navbar bg-light" id="nav" style="background-color:beige">
@@ -17,48 +21,51 @@
       <span class="navbar-brand mb-0 h1" id="header">RECIPES AND COCKTAILS</span>
 
       <button class="btn" id="search-btn" type="button" onClick="myOnClickFn()">Back to Cocktails!</button>
-        <script>
-          function myOnClickFn(){
-            document.location.href="index.html";
-          }
-          </script>
+      <script>
+        function myOnClickFn() {
+          document.location.href = "index.html";
+        }
+      </script>
       <div class="header-img">
         <img src="./img/header.jpeg">
-        <h1 id="image-text"><strong>Scroll down to find a random cocktail and then pick the perfect recipe to pair by clicking the recipe button!</strong></h1>
+        <h1 id="image-text"><strong>Scroll down to find a random cocktail and then pick the perfect recipe to pair by
+            clicking the recipe button!</strong></h1>
       </div>
   </nav>
 
-  <div class = "container">
-    <div class = "meal-wrapper">
-      <div class = "meal-search">
-        <h2 class = "title">Find Recipes For Your Ingredients</h2>
-  
+  <div class="container">
+    <div class="meal-wrapper">
+      <div class="meal-search">
+        <h2 class="title">Find Recipes For Your Ingredients</h2>
 
-        <div class = "meal-search-box">
-          <input type = "text" class = "search-control" placeholder="Enter an ingredient" id = "search-input">
-          <button type = "submit" class = "search-btn btn" id = "search-btn">
-            <i class = "fas fa-search"></i>
+
+        <div class="meal-search-box">
+          <input type="text" class="search-control" placeholder="Enter an ingredient" id="search-input">
+          <button type="submit" class="search-btn btn" id="search-btn">
+            <i class="fas fa-search"></i>
           </button>
         </div>
       </div>
 
 
-      <div class = "meal-result">
-        <h2 class = "title">Your Search Results:</h2>
-        <div id= "meal">
+      <div class="meal-result">
+        <h2 class="title">Your Search Results:</h2>
+        <div id="meal">
         </div>
       </div>
 
 
-      <div class = "meal-details">
+      <div class="meal-details">
         <!-- recipe close btn -->
-        <button type = "button" class = "btn recipe-close-btn" id = "recipe-close-btn">
-          <i class = "fas fa-times"></i>
+        <button type="button" class="btn recipe-close-btn" id="recipe-close-btn">
+          <i class="fas fa-times"></i>
         </button>
 
         <!-- meal content -->
-        <div class = "meal-details-content">
+        <div class="meal-details-content">
         </div>
       </div>
     </div>
   </div>
+  <script href="./R-assets/script.js"></script>
+  </body>
