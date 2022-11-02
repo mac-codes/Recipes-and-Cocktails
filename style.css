@@ -183,10 +183,10 @@ body{
     display: block;
 }
 
-.meal-details-content{
+.meal-details-c{
     margin: 2rem;
 }
-.meal-details-content p:not(.recipe-category){
+.meal-details-c p:not(.recipe-category){
     padding: 1rem 0;
 }
 .recipe-close-btn{
